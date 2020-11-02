@@ -1,13 +1,13 @@
 {
-  "//1": "Developed by Motion and ukqzn",
-  "//2": "Daha fazlası için glitch.com/@ukqzn",
+  "//1": "Developed by Motion and byreddawn",
+  "//2": "Discord - https://discord.gg/ysK9twP",
   "//3": "updating this file will download and update your packages",
   "name": "",
   "version": "0.0.1",
   "description": "Glitch Discord Eğlence Botu.",
-  "main": "ukqzn.js",
+  "main": "byreddawn.js",
   "scripts": {
-    "start": "node ukqzn.js"
+    "start": "node byreddawn.js"
   },
   "dependencies": {
     "chalk": "^4.0.0",

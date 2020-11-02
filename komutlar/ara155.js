@@ -37,6 +37,6 @@ exports.conf = {
 
 exports.help = {
   name: "ara155",
-  description: "FwhyCode",
+  description: "x_REDDAWN_x",
   usage: "ara155"
 };

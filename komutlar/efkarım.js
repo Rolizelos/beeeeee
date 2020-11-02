@@ -17,6 +17,6 @@ exports.conf = {
 
 exports.help = {
   name: "efkarım",
-  description: "FwhyCode | Efkarınızı ölçer",
+  description: "x_REDDAWN_x | Efkarınızı ölçer",
   usage: "efkar Ölçer"
 };

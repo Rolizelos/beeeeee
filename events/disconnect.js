@@ -2,4 +2,4 @@
 module.exports = client => {
   console.log(`Bağlantı Koptu! ${new Date()}`);
 };
-//ukqzn
+//x_REDDAWN_x#0001
