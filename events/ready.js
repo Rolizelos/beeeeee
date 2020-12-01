@@ -26,6 +26,9 @@ module.exports = client => {
   setInterval(function() {
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
-    client.user.setActivity(oyun[random], "WATCHING");
+    client.user.setActivity(oyun[random], { type: "WATCHING"});  
+//LISTENING = DİNLİYOR
+  //WATCHING = İZLİYOR
+  //PLAYING = OYNUYOR 
   }, 2 * 2500);
 };
