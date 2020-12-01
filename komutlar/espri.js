@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
 
-message.channel.send("x_REDDAWN_x | Espri yükleniyor.").then(message => {
+message.channel.send("Woli | Espri yükleniyor.").then(message => {
 
     var FwhyCode = [
  

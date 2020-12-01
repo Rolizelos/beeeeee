@@ -17,7 +17,7 @@ module.exports = client => {
   );
   client.user.setStatus("idle");
   var oyun = [
-    "x_REDDAWN_x"
+    "Woli"
   ];
 //x_REDDAWN_x#0001
   setInterval(function() {

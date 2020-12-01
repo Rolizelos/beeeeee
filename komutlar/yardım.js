@@ -20,7 +20,6 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» !espri :** Bot sizin için espri yapar.
 > **» !hesapla :** Belirttiğiniz matematik işlemini bot yapar.
 > **» !kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
-> **» !kaç-cm :** Bot malafat uzunluğunuzu söyler.
 > **» !kralol :** Kral olmanıza yarar.
 > **» !tokat :** Etiketlediğiniz kişiyi tokatlarsınız.
 > **» !yazıtura :** Bot ile yazı-tura oyununu oynarsınız.
