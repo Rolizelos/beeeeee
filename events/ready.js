@@ -15,7 +15,7 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  client.user.setStatus("idle");
+  client.user.setStatus("dnd");
   var oyun = [
     "Woli",
     "By Rolizelos",
@@ -26,6 +26,6 @@ module.exports = client => {
   setInterval(function() {
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
-    client.user.setActivity(oyun[random], "");
+    client.user.setActivity(oyun[random], "WATCHING");
   }, 2 * 2500);
 };//x_REDDAWN_x#0001
