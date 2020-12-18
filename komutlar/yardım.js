@@ -7,7 +7,7 @@ exports.run = async(client, message, args) => {
  .setAuthor("TheFunst", client.user.avatarURL)
 .setColor("PURPLE")
 .setTitle("TheFunst BOT")
- .setURL("https://discordapp.com/oauth2/authorize?client_id=647386467844227074&scope=bot&permissions=8")
+ .setURL("https://discordapp.com/oauth2/authorize?client_id=789480496933240843&scope=bot&permissions=8")
  .setDescription(`
 
 **!yardım**, ile yardım alabilirsiniz.
