@@ -1,39 +1,51 @@
 const Discord = require('discord.js');
-const fs = require('fs');
+const db = require('quick.db')
 
-exports.run = (client, message, args) => {
-  if (!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send(`Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.`);
-if (!message.guild) {
-  const ozelmesajuyari = new Discord.MessageEmbed()
-    .setColor('RANDOM')
-  .setTimestamp()
-  .setAuthor(message.author.username, message.author.avatarURL)
-  .addField('Uyarı', '`ban` adlı komutu özel mesajlarda kullanamazsın.')
-  return message.author.send(ozelmesajuyari); }
-  let guild = message.guild
-  let reason = args.slice(1).join(' ');
-  let dızcılaraselam = message.mentions.users.first();
 
-  if (message.mentions.users.size < 1) return message.channel.send(`Lütfen sunucudan yasaklayacağınız kişiyi etiketleyin.`).catch(console.error);
-
-  if (!message.guild.member(dızcılaraselam).bannable) return message.channel.send(`❌ Belirttiğiniz kişinin Yetkisi Benden Daha Üstün!`);
-  message.guild.member(dızcılaraselam).ban();
-
-  message.channel.send(" Başarılı, " + dızcılaraselam + " İD'li kullanıcı **" + reason + "** sebebiyle sunucudan yasaklandı.")
-     
+exports.run = async(client, message, args) => {
+  const banl = db.fetch(`banlimit_${message.guild.id}`);
+  const rol = db.fetch(`yasaklamaRol_${message.guild.id}`);
+  const log = db.fetch(`yasaklamaKanal_${message.guild.id}`);
+  if (!log) return
+  if (!rol) return
+  if (!banl) return
+  
+  if (message.member.roles.has(rol)) {
+    const kisi = message.mentions.users.first()
+    const sebep = args[1]
+    if (!kisi) {
+      return message.reply(`, Banlanıcak Kullanıcıyı Etiketlemelisin.
+Etiketliyorsan Bu Hatayı Alıyorsan O Üyenin Görebildiği Bir Kanalda Banlamayı Denemelisin`)
+    }
+    
+    if (!sebep) {
+      return message.reply(`Hata: Sunucudan banlancak kişiyi veya ban sebebini yazmadın!`)
+    }
+    if (db.fetch(`banP_${message.author.id}`) >= banl) {
+    message.channel.send(`<@${message.author.id}> **Hata:** Ban limitin doldu!`)  
+    } else {
+    client.channels.get(log).send(`${kisi} - <@${message.author.id}> Tarafından ${sebep} Nedeniyle Sunucudan Yasaklandı. ${client.emojis.get("647746144155467786")}`)  
+    message.guild.ban(kisi.id, sebep)
+    db.add(`banP_${message.author.id}`, 1)
+    }
+    
+  } else {
+    return message.reply("Ban Atabilmek İçin Sunucu Sahibinin Ayarladığı Role Sahip Olmalısınız.")
+  } 
+    
+  
 };
 
 exports.conf = {
   enabled: true,
-  guildOnly: true,
-  aliases: ['ban'],
-  permLevel: 0,
-    kategori: "moderasyon",
+  guildOnly: false,
+  aliases: ["yasakla"],
+  permLevel: 0
 };
 
 exports.help = {
   name: 'ban',
-  description: 'İstediğiniz kişiyi sunucudan yasaklar.',
-  usage: 'ban <@kullanıcı> <sebep>',
- 
+  description: 'Ban limiti.',
+  usage: 'banlimit',
+  kategori: 'yetkili'
 };
