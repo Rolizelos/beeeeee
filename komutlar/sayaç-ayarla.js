@@ -14,7 +14,7 @@ Lütfen Bir Kanal Belirt. :shrug:
 !sayaç-ayarla #kanal <Sayı>
 \`\`\`
 
-Eğer Herşey Zorsa Siteden Kolayca Ayarla : https://www.mcadventuretime.com/dc/
+
 `)
   
  if(isNaN(args[1])) return message.channel.send(`
@@ -24,7 +24,7 @@ Belirttiğin Sayı Çok Küçük Veya O Sayıya Zaten Ulaşmışsın :shrug:
 !sayaç-ayarla #kanal <Sayı>
 \`\`\`
 
-Eğer Herşey Zorsa Siteden Kolayca Ayarla : https://www.mcadventuretime.com/dc/
+
 `)
  
  if(message.guild.memberCount > args[1]) return message.channel.send(`
@@ -34,7 +34,7 @@ Belirttiğin Sayı Çok Küçük Veya O Sayıya Zaten Ulaşmışsın :shrug:
 !sayaç-ayarla #kanal <Sayı>
 \`\`\`
 
-Eğer Herşey Zorsa Siteden Kolayca Ayarla : https://www.mcadventuretime.com/dc/
+
 `)
 
  
