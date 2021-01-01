@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const ayarlar = require('./config.json');
+const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
 const moment = require('moment');
 var Jimp = require('jimp');
