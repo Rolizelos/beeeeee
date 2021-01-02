@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
 const moment = require('moment');
 var Jimp = require('jimp');
@@ -16,6 +15,7 @@ const snekfetch = require('snekfetch');
 const queue = new Map();
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
+const ayarlar = require('./ayarlar.json')
 
 
 const app = express();
