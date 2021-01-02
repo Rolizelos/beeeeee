@@ -38,7 +38,7 @@ exports.run = async(client, message, args) => {
     - Toplam Jail Sayın: **${jail}**
     
     - Toplam Mute Sayın: **${mute}**`)
-    .setFooter('Pythonic <3 Swenlor')
+    .setFooter(':bee:Bee6:bee:')
     .setTimestamp()
     message.channel.send(stat)
   }

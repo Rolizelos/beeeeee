@@ -14,7 +14,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» b!kayıt-yardım :** Kayıt Komutlarını Gösterir.
 > **» b!eğlence :** Eğlence Komutlarını Gösterir.
 > **» b!otorol :** Otorol Kullanımı.
-> **» b!... :** ...
+> **» b!moderasyon :** Moderasyon Komutlarını Gösterir.
 
 
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**

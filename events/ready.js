@@ -21,7 +21,8 @@ module.exports = client => {
     "v100",
     "#BAKIMDA...",
     "#FaoX - #FunsT",
-    "#BAKIMDA..."
+    "#BAKIMDA...",
+    "🐝🐝🐝"
     
   ];
 

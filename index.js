@@ -51,6 +51,11 @@ fs.readdir('./komutlar/', (err, files) => {
 });
 
 
+client.on('message', msg => {
+  if (msg.content.toLoweCase() === '@Bee6') {
+    msg.reply('Olum Hayırıdr Sen! Beni ');
+  }
+});
 
 
 client.reload = command => {
