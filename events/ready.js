@@ -18,7 +18,7 @@ module.exports = client => {
   client.user.setStatus("");
   var oyun = [
     "#BAKIMDA...",
-    "v100",
+    "v100 | v200 Yakında",
     "#BAKIMDA...",
     "#FaoX - #FunsT",
     "b!yardım",
