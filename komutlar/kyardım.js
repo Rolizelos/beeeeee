@@ -13,18 +13,18 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 
 > **:prince:»b!erkek-rol @rol** Erkek Rolünü Ayarlar
 > **:x:»b!erkek-rol sıfırla** Erkek Rolünü Sıfırlar
-> **»b!kız-rol @rol** Kız Rolünü Ayarlar
+> **:princess:»b!kız-rol @rol** Kız Rolünü Ayarlar
 > **:x:»b!kız-rol sıfırla** Kız Rolünü Sıfırlar
-> **»b!alınacak-rol @rol** Kayıt Olunca Alınacak Rolü Ayarlar
+> **:no_entry:»b!alınacak-rol @rol** Kayıt Olunca Alınacak Rolü Ayarlar
 > **:x:»b!alınacak-rol sıfırla** Kayıt Olunca Alınacak Rolü Sıfırlar
-> **»b!kayıt-kanal #kanal** Kayıt Kanalını Ayarlar
+> **:o:»b!kayıt-kanal #kanal** Kayıt Kanalını Ayarlar
 > **:x:»b!kayıt-kanal sıfırla **Kayıt Kanalını Sıfırlar
-> **»b!kayıtçı-rol @rol **Kayıtçı Rolünü Ayarlar
+> **:man_construction_worker:»b!kayıtçı-rol @rol **Kayıtçı Rolünü Ayarlar
 > **:x:»b!kayıtçı-rol sıfırla** Kayıtçı Rolünü Sıfırlar
-> **»b!kayıtçı-ver @kullanıcı **Belirttiğiniz Kullanıya Kayıtçı Rolü Verir
-> **»b!kayıtçı-al @kullanıcı **Belirttiğiniz Kullanıcıdan Kayıtçı Rolünü Alır
-> **»b!erkek @kullanıcı isim yaş** Erkek Olarak Kayıt Edersiniz
-> **»b!kız @kullanıcı isim yaş** Kız Olarak Kayıt Edersiniz
+> **:white_check_mark:»b!kayıtçı-ver @kullanıcı **Belirttiğiniz Kullanıya Kayıtçı Rolü Verir
+> **:no_entry:»b!kayıtçı-al @kullanıcı **Belirttiğiniz Kullanıcıdan Kayıtçı Rolünü Alır
+> **:prince:»b!erkek @kullanıcı isim yaş** Erkek Olarak Kayıt Edersiniz
+> **:princess:»b!kız @kullanıcı isim yaş** Kız Olarak Kayıt Edersiniz
 
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 Bu komut ${message.author.username} tarafından istendi! 

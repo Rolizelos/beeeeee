@@ -12,7 +12,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 ▬▬▬▬▬▬[ :bee: **Bot Komutları** :bee: ]▬▬▬▬▬▬
 
 > **» b!kayıt-yardım :** Kayıt Komutlarını Gösterir.
-> **» b! :** .
+> **» b!eğlence :** Eğlence Komutlarını Gösterir.
 > **» b!... :** ...
 > **» b!... :** ...
 
