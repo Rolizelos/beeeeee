@@ -13,7 +13,7 @@ message.channel.send("Bee6").then(message => {
       "Hayırdır, Noldu?",
       "``b!yardım`` Yaz Bi Hele",
       "BeeÜstü Karşında :D",
-      "Kelebek Gibi Uçarım Arı Gibi, ee Neyse Zaten Arı Değil Miyim? \n Söylememe Hiç Gerek Yoktu  :person_facepalming: \n qqweqwewq"
+      "Kelebek Gibi Uçarım Arı Gibi, ee Neyse Zaten Arı Değil Miyim? \n Söylememe Hiç Gerek Yoktu  :person_facepalming: \n Bu Sözü Boşverelim \n qqweqwewq"
 
     ];
 
