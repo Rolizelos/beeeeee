@@ -23,7 +23,7 @@ aliases: ['kyardım', 'kayıt-yardım', 'register'],
 permlevel: 0
 }
 exports.help = {
-name: 'yardım',
+name: 'kyardım',
 description: '',
 usage: ''
 }

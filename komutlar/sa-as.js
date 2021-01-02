@@ -1,9 +1,9 @@
-const db = require('wio.db')
+const db = require('quick.db')
 const Discord = require('discord.js')
  
  
 exports.run = async (bot, message, args) => {
-  if (!args[0]) return message.channel.send(`Aç yada kapat yazmalısın!! Örnek: **!sa-as aç**`)
+  if (!args[0]) return message.channel.send(`Aç yada kapat yazmalısın!! Örnek: **b!sa-as aç**`)
   if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send(' Bu komutu kullanmak için \`MESAJLARI_YÖNET\` yetkisine sahip olmalısın!')
  
   if (args[0] === 'aç') {
