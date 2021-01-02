@@ -19,7 +19,6 @@ const ayarlar = require('./ayarlar.json');
 require('./util/eventLoader.js')(client);
 require("./util/eventLoader")(client);
 
-
 const app = express();
 app.get("/", (request, response) => {
   console.log(Date.now() + " Ping tamamdır.");

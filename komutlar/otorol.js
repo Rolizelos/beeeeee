@@ -1,35 +1,40 @@
- const Discord = require('discord.js')
+const Discord = require ("discord.js");
 
-exports.run = async (client, message, args, level) => {
-  message.delete(3000)
-  try {
-    
-    const embed = new Discord.MessageEmbed()
-    .setTitle(`Hollywood bot Otorol komut desteği -  :hollyayarlar:`)
-    .setFooter(message.author.username)
-    .setColor('RANDOM')
-    .setImage('https://i.gyazo.com/425d2374950bc09caff1fa5199edbf08.gif')
-    .setTimestamp()
-    .setFooter(message.author.username , message.author.avatarURL)
-    .setFooter("Otorolü kurmak için ilk önce Hollywood adlı rolü verilecek rolün üstüne alın. Ardından verilecek rolü etiketleyin. Eğer etiketleyemiyorsanız. Ayarlar/Roller/Verilecek rol/Rol etiketleme iznini aktif edin. Ve şu komutu kullanarak çalıştırın h!otorol-ayarla @rol #kanal")
+exports.run = (client, message) => {
 
-    return message.channel.send({embed});
-    
-    message.channel.send();
-  } catch (err) {
-    message.channel.send('Daha Sonra Tekrar Deneyin!\n' + err).catch();
-  }
+const EmbedFwhyCode = new Discord.MessageEmbed()
+
+.setColor("RANDOM")
+.setTitle("**▬▬▬▬▬▬[** ©️ **Bee6 Bot (V12)** ©️ **]▬▬▬▬▬▬**  \n> :floppy_disk: **Şuanda kullanılan prefix** `b!`")
+.setThumbnail('https://cdn.discordapp.com/attachments/778643898272055337/794908648186314752/tenor.gif')
+.setDescription(`
+
+▬▬▬▬▬▬[ :bee: **Otorol Komutları** :bee: ]▬▬▬▬▬▬
+
+> **» b!otorol-ayarla @rol #kanal :** Otorol Ayarlama.
+> **» b!otorol-kapat :** Otorolü Kapatır.
+
+**▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
+Bu komut ${message.author.username} tarafından istendi! 
+
+`)
+ 
+.setFooter(client.user.username + "", client.user.avatarURL)
+.setTimestamp();
+
+return message.channel.send(EmbedFwhyCode)
+.then;
+
 };
-
 exports.conf = {
-  enabled: true,
-  aliases: [],
-  guildOnly: false,
-  permLevel: 0
+    enabled: true, 
+    guildOnly: false, 
+    aliases: [], 
+    permLevel: 0 
 };
-
-exports.help = {
-  name: 'otorol',
-  description: 'Bottaki Komut Sayısını Gösterir.',
-  usage: 'otorol'
+  
+  exports.help = {
+    name: 'otorol',
+    description: 'The Help Command',
+    usage: 'otorol'
 };
