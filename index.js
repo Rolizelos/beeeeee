@@ -51,12 +51,6 @@ fs.readdir('./komutlar/', (err, files) => {
 });
 
 
-client.on('message', msg => {
-  if (msg.content.toLoweCase() === 'Bee6') {
-    msg.reply('Buyrun Efenim, Ben Her Zaman Burdayım. :wink:');
-  }
-});
-
 client.reload = command => {
     return new Promise((resolve, reject) => {
         try {
