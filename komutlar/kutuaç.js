@@ -60,5 +60,5 @@ exports.conf = {
   aliases: ['jsal']
 }
 exports.help = {
-  name: "kutuaç"
+  name: "kutuaçbs"
 }

@@ -15,7 +15,12 @@ const snekfetch = require('snekfetch');
 const queue = new Map();
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
-const ayarlar = require('./ayarlar.json')
+const ayarlar = require('./ayarlar.json');
+const ms = require('parse-ms');
+var Jimp = require('jimp');
+require('./util/eventLoader.js')(client);
+const snekfetch = require('snekfetch');
+require("./util/eventLoader")(client);
 
 
 const app = express();

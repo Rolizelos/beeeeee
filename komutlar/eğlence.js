@@ -5,24 +5,26 @@ exports.run = (client, message) => {
 const EmbedFwhyCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("**▬▬▬▬▬▬[** ©️ **Roliz Bot (V12)** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `!istatistik` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `!`")
-.setThumbnail("https://cdn.discordapp.com/attachments/777509193988046868/779356018521014322/roliilogoa.png")
+.setTitle("**▬▬▬▬▬▬[** ©️ **Bee6 Bot (V12)** ©️ **]▬▬▬▬▬▬**  \n> :floppy_disk: **Şuanda kullanılan prefix** `!`")
+.setThumbnail("https://cdn.discordapp.com/attachments/778643898272055337/794908648186314752/tenor.gif")
 .setDescription(`
 
 ▬▬▬▬▬▬[ :bee: **Eğlence Komutları** :bee: ]▬▬▬▬▬▬
 
-> **» !aduketçek :** Etiketlediğiniz kişiye aduket çekersiniz.
-> **» !balık-tut :** Denizde balık tutarsınız.
-> **» !beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
-> **» !ara155 :** Polisi aramanıza yarar.
-> **» !efkarım :** Şu anda olan efkarınızı ölçersiniz.
-> **» !ejderha-yazı :** Ejderha temalı logo üretirsiniz.
-> **» !espri :** Bot sizin için espri yapar.
-> **» !kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
-> **» !kralol :** Kral olmanıza yarar.
-> **» !tokat :** Etiketlediğiniz kişiyi tokatlarsınız.
-> **» !yılbaşı :** Yılbaşının gelmesine ne kadar yaklaştığınızı gösterir.
-> **» !kuş-dili-çevirici :** Yazdığınız şeyi kuş diline çevirir.
+> **» b!aduketçek :** Etiketlediğiniz kişiye aduket çekersiniz.
+> **» b!balık-tut :** Denizde balık tutarsınız.
+> **» b!beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
+> **» b!ara155 :** Polisi aramanıza yarar.
+> **» b!efkarım :** Şu anda olan efkarınızı ölçersiniz.
+> **» b!ejderha-yazı :** Ejderha temalı logo üretirsiniz.
+> **» b!espri :** Bot sizin için espri yapar.
+> **» b!kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
+> **» b!kralol :** Kral olmanıza yarar.
+> **» b!tokat :** Etiketlediğiniz kişiyi tokatlarsınız.
+> **» b!yılbaşı :** Yılbaşının gelmesine ne kadar yaklaştığınızı gösterir.
+> **» b!kuş-dili-çevirici :** Yazdığınız şeyi kuş diline çevirir.
+> **» b!kutuaçbs :** Brawl Stars Kutusu Açarsınız.
+> **» b!taksimdayı**
 
 
 
