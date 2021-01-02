@@ -52,17 +52,10 @@ fs.readdir('./komutlar/', (err, files) => {
 
 
 client.on('message', msg => {
-  if (msg.content === 'Bee6') {
+  if (msg.content.toLoweCase() === 'Bee6') {
     msg.reply('Buyrun Efenim, Ben Her Zaman Burdayım. :wink:');
   }
 });
-
-client.on('message', msg => {
-  if (msg.content.toLoweCase() === '<@792366564448010251>') {
-    msg.reply('Olum Hayırıdr Sen! Beni Etiketledin Geldim.');
-  }
-});
-
 
 client.reload = command => {
     return new Promise((resolve, reject) => {
