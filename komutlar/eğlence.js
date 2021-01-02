@@ -21,7 +21,6 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» b!kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
 > **» b!kralol :** Kral olmanıza yarar.
 > **» b!tokat :** Etiketlediğiniz kişiyi tokatlarsınız.
-> **» b!yılbaşı :** Yılbaşının gelmesine ne kadar yaklaştığınızı gösterir.
 > **» b!kuş-dili-çevirici :** Yazdığınız şeyi kuş diline çevirir.
 > **» b!kutuaçbs :** Brawl Stars Kutusu Açarsınız.
 > **» b!taksimdayı**
