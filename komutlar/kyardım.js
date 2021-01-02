@@ -1,29 +1,52 @@
-const discord = require('discord.js')
-const db = require('quick.db')
-const ayarlar = require('../ayarlar.json')
+const Discord = require ("discord.js");
 
-exports.run = async(client, message, args) => {
+exports.run = (client, message) => {
 
-let prefix = ayarlar.prefix;
+const EmbedFwhyCode = new Discord.MessageEmbed()
 
-const yardım = new discord.MessageEmbed()
-.setAuthor(client.user.username, client.user.avatarURL())  
-.setTitle(`${client.user.username}`)
-.setColor('BLACK')
-.setDescription(`***KAYIT YARDIM*** \n 🤴 **${prefix}erkek-rol @rol** Erkek Rolünü Ayarlar \n **❌ ${prefix}erkek-rol sıfırla** Erkek Rolünü Sıfırlar \n ** 👸 ${prefix}kız-rol @rol** Kız Rolünü Ayarlar \n **❌ ${prefix}kız-rol sıfırla** Kız Rolünü Sıfırlar \n **📛 ${prefix}alınacak-rol @rol** Kayıt Olunca Alınacak Rolü Ayarlar \n **❌ ${prefix}alınacak-rol sıfırla** Kayıt Olunca Alınacak Rolü Sıfırlar \n **⭕ ${prefix}kayıt-kanal #kanal** Kayıt Kanalını Ayarlar \n **❌ ${prefix}kayıt-kanal sıfırla** Kayıt Kanalını Sıfırlar \n **👷‍♂️ ${prefix}kayıtçı-rol @rol** Kayıtçı Rolünü Ayarlar \n **❌ ${prefix}kayıtçı-rol sıfırla** Kayıtçı Rolünü Sıfırlar \n **✅ ${prefix}kayıtçı-ver @kullanıcı** Belirttiğiniz Kullanıya Kayıtçı Rolü Verir \n **⛔ ${prefix}kayıtçı-al @kullanıcı** Belirttiğiniz Kullanıcıdan Kayıtçı Rolünü Alır \n **👦 ${prefix}erkek @kullanıcı isim yaş** Erkek Olarak Kayıt Edersiniz \n **🧒 ${prefix}kız @kullanıcı isim yaş** Kız Olarak Kayıt Edersiniz`)
-.setThumbnail(client.user.avatarURL())
-.setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! - Bee6`)
-message.channel.send(yardım)
+.setColor("RANDOM")
+.setTitle("**▬▬▬▬▬▬[** ©️ **Bee6 Bot (V12)** ©️ **]▬▬▬▬▬▬** \n> :floppy_disk: **Şuanda kullanılan prefix** `b!`")
+.setThumbnail('https://cdn.discordapp.com/attachments/778643898272055337/794908648186314752/tenor.gif')
+.setDescription(`
 
-}
+▬▬▬▬▬▬[ :bee: **Kayıt Komutları** :bee: ]▬▬▬▬▬▬
+
+> **:prince:»b!erkek-rol @rol** Erkek Rolünü Ayarlar
+> **:x:»b!erkek-rol sıfırla** Erkek Rolünü Sıfırlar
+> **»b!kız-rol @rol** Kız Rolünü Ayarlar
+> **:x:»b!kız-rol sıfırla** Kız Rolünü Sıfırlar
+> **»b!alınacak-rol @rol** Kayıt Olunca Alınacak Rolü Ayarlar
+> **:x:»b!alınacak-rol sıfırla** Kayıt Olunca Alınacak Rolü Sıfırlar
+> **»b!kayıt-kanal #kanal** Kayıt Kanalını Ayarlar
+> **:x:»b!kayıt-kanal sıfırla **Kayıt Kanalını Sıfırlar
+> **»b!kayıtçı-rol @rol **Kayıtçı Rolünü Ayarlar
+> **:x:»b!kayıtçı-rol sıfırla** Kayıtçı Rolünü Sıfırlar
+> **»b!kayıtçı-ver @kullanıcı **Belirttiğiniz Kullanıya Kayıtçı Rolü Verir
+> **»b!kayıtçı-al @kullanıcı **Belirttiğiniz Kullanıcıdan Kayıtçı Rolünü Alır
+> **»b!erkek @kullanıcı isim yaş** Erkek Olarak Kayıt Edersiniz
+> **»b!kız @kullanıcı isim yaş** Kız Olarak Kayıt Edersiniz
+
+**▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
+Bu komut ${message.author.username} tarafından istendi! 
+
+`)
+ 
+.setFooter(client.user.username + "", client.user.avatarURL)
+.setTimestamp();
+
+return message.channel.send(EmbedFwhyCode)
+.then;
+
+};
 exports.conf = {
-enabled: true,
-guildonly: false,
-aliases: ['kyardım', 'kayıt-yardım', 'register'],
-permlevel: 0
-}
-exports.help = {
-name: 'kyardım',
-description: '',
-usage: ''
-}
+    enabled: true, 
+    guildOnly: false, 
+    aliases: ["kyardım", "ky", "khelp", "registerhelp", "rh"], 
+    permLevel: 0 
+};
+  
+  exports.help = {
+    name: 'kayıt-yardım', 
+    description: 'The Help Command',
+    usage: 'yardım'
+};

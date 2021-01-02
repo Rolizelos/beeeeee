@@ -9,7 +9,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 .setThumbnail('https://cdn.discordapp.com/attachments/778643898272055337/794908648186314752/tenor.gif')
 .setDescription(`
 
-▬▬▬▬▬▬[ :bee: **Bot Komutlarıı** :bee: ]▬▬▬▬▬▬
+▬▬▬▬▬▬[ :bee: **Bot Komutları** :bee: ]▬▬▬▬▬▬
 
 > **» b!kayıt-yardım :** Kayıt Komutlarını Gösterir.
 > **» b! :** .
